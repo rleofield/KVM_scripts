@@ -1,0 +1,36 @@
+# -- Konfiguration der virtuellen Maschinen
+# PC7
+
+# column 2+4:  provided by local DNS-Server (only for info here)
+
+# IP Regions
+#    Linux 192.168.10.31 - 192.168.10.59
+#    Win   192.168.10.60 - 192.168.10.79
+
+# 52:54:00 default MAC prefix in KVM
+
+
+System	        IP              MAC0                 	MAC1			VNC   	DNS		
+# linux  E0 und A0
+test            192.168.10.31	52:54:00:EF:E0:01	52:54:00:EF:A0:01	10	vtest		   
+userver         192.168.10.32   52:54:00:EF:E0:02	-			        11 	vuserver    
+dapper       	192.168.10.33   52:54:00:EF:E0:03	-			        12 	vdapper    	
+debian        	192.168.10.34   52:54:00:EF:E0:04	-			        13 	vdebian     	
+maverick        192.168.10.35   52:54:00:EF:E0:05	-			        14 	vmaverick   	
+suse            192.168.10.36   52:54:00:EF:E0:06	-			        15 	vsuse		
+precise1	 192.168.10.40   52:54:00:EF:E0:0A	-			        19 	vprecise1	
+kmailprecise    192.168.10.41   52:54:00:EF:E0:0B	-			        20 	vkmailprecise	
+eserver		192.168.10.42   52:54:00:EF:E0:0C	-			        31 	veserver	
+centos		192.168.10.43   52:54:00:EF:E0:0D	-			        32 	vcentos		
+bodhi		    192.168.10.44   52:54:00:EF:E0:0E	-			        33 	vbodhi		
+fedora		    192.168.10.45   52:54:00:EF:E0:0F	-			        34 	vfedora		
+quetzal		    192.168.10.48   52:54:00:EF:E0:12	-			        37 	vquetzal	
+kserver         192.168.10.51   52:54:00:EF:E0:15	52:54:00:EF:A0:15	40 	vkserver    
+
+
+#win	F0 und B0										rdesktop
+winxp           192.168.10.60   52:54:00:EF:F0:00	-			50 	vwinxp		- 
+winxphome       192.168.10.61   52:54:00:EF:F0:01	-			56 	vwinxphome	-	
+win7fibu        192.168.10.62   52:54:00:EF:F0:02	-			57 	vwin7fibu	- 	
+
+
